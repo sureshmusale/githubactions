@@ -11,13 +11,13 @@ jobs:
       run: echo "hello GitHub Actions"
     - name: multi line script
       run: |
+        echo "----- printing platform processor"
         node -v
         npm -v
     - name: python commands
       #run: echo "printing platform processor"
       #name: print processor
       run: |
-        echo "----- printing platform processor"
         import platform
         print(platform.processor())
       shell: python
