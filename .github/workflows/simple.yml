@@ -23,6 +23,7 @@ jobs:
       shell: python
   run-second-job-print-windows:
     runs-on: windows-latest
+    needs: [first-job-run-shell-command]
     steps:
       - name: directory powershell
         run: Get-Location
