@@ -4,7 +4,7 @@ name: Shell commands
 on: [push]
 
 jobs:
-  run-shell-command:
+  first-job-run-shell-command:
     runs-on: ubuntu-latest
     steps:
     - name: echo a string
@@ -21,4 +21,11 @@ jobs:
         import platform
         print(platform.processor())
       shell: python
-           
+  run-second-job-print-windows:
+    runs-on: windows-latest
+    steps:
+      - name: directory powershell
+        run: Get-Location
+      - name: directory bash
+        run: pwd
+        shell: bash
