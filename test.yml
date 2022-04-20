@@ -1,0 +1,17 @@
+name: suresh
+age: 33
+address: "obermain 24"
+active: true
+key:
+    key1: suresh
+    key2: mahesh
+    key3: bhavani
+array:
+    - key1
+    - key2
+    - { key: value3}
+objectsarray:
+    - key: value3
+      key3: value5
+    - key: value4
+      key7: value6
