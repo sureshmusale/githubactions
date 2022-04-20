@@ -14,7 +14,10 @@ jobs:
         node -v
         npm -v
     - name: python commands
+      #run: echo "printing platform processor"
+      #name: print processor
       run: |
+        echo "----- printing platform processor"
         import platform
         print(platform.processor())
       shell: python
