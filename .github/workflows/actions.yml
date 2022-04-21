@@ -10,6 +10,10 @@ jobs:
           echo "before checkout"
           pwd
           ls
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
+          echo ${{gitHub.token}}
       - name: checkout
         uses: actions/checkout@v1
       - name: list files after checkout
