@@ -1,5 +1,5 @@
 name: actions workflow
-on: [push]
+on: [push, pull_request]
 
 jobs:
   run-github-actions:
@@ -10,6 +10,7 @@ jobs:
           echo "before checkout"
           pwd
           ls
+          # environment variables
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
