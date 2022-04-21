@@ -8,7 +8,8 @@ jobs:
       - name: list files
         run: |
           echo "*************pwd --- ls *************"
-          pwd ls
+          pwd
+          ls
       - name: simple js actions
         id: abcd
         uses: actions/hello-world-javascript-action@v1
