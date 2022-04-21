@@ -7,12 +7,14 @@ jobs:
     steps:
       - name: list files
         run: |
+          echo "before checkout"
           pwd
           ls
       - name: checkout
         uses: actions/checkout@v1
       - name: list files after checkout
         run: |
+          echo "after checkout"
           pwd
           ls -a
       - name: simple js actions
