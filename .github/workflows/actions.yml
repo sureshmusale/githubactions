@@ -7,9 +7,14 @@ jobs:
     steps:
       - name: list files
         run: |
-          echo "*************pwd --- ls *************"
           pwd
           ls
+      - name: checkout
+        uses: actions/checkout@v1
+      - name: list files after checkout
+        run: |
+          pwd
+          ls -a
       - name: simple js actions
         id: abcd
         uses: actions/hello-world-javascript-action@v1
