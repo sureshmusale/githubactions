@@ -1,5 +1,9 @@
 name: ACTIONS WORKFLOW
-on: [push, pull_request]
+#on: [push, pull_request] # passing in array
+on:
+  push:
+  pull_request:
+    types: [closed, opened, reopened, assigned]  
 
 jobs:
   RUN-GITHUB-ACTIONS:
