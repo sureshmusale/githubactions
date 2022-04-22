@@ -5,7 +5,7 @@ jobs:
   RUN-GITHUB-ACTIONS:
     runs-on: ubuntu-latest
     steps:
-      - name: list files
+      - name: LIST FILES
         run: |
           echo "before checkout"
           pwd
@@ -29,3 +29,4 @@ jobs:
           who-to-greet: Suresh Musale
       - name: log greeting time
         run: echo {{  steps.abcd.outputs.time }}
+#on: [pull_request]
