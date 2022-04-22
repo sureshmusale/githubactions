@@ -26,7 +26,7 @@ jobs:
         id: abcd
         uses: actions/hello-world-javascript-action@v1
         with:
-          who-to-greet: Suresh Musale
+          who-to-greet: Suresh Musale & Sai Sudha
       - name: log greeting time
         run: echo {{  steps.abcd.outputs.time }}
 #on: [pull_request]
