@@ -1,8 +1,8 @@
-name: actions workflow
+name: ACTIONS WORKFLOW
 on: [push, pull_request]
 
 jobs:
-  run-github-actions:
+  RUN-GITHUB-ACTIONS:
     runs-on: ubuntu-latest
     steps:
       - name: list files
