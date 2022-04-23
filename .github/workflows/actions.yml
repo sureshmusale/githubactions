@@ -2,8 +2,8 @@ name: ACTIONS WORKFLOW
 #on: [push, pull_request] # passing in array
 on:
   schedule:
-    - cron: "0/5 * * * *"
-    - cron: "0/6 * * * *"
+   # - cron: "0/5 * * * *"
+   # - cron: "0/6 * * * *"
   #push:
   #pull_request:
   #  types: [closed, opened, reopened, assigned]  
