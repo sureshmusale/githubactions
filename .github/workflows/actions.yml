@@ -1,12 +1,14 @@
 name: ACTIONS WORKFLOW
 #on: [push, pull_request] # passing in array
 on:
-  schedule:
+  repository_dispatch:
+    types: [build]
+  #schedule:
    # - cron: "0/5 * * * *"
    # - cron: "0/6 * * * *"
   #push:
-  #pull_request:
-  #  types: [closed, opened, reopened, assigned]  
+  pull_request:
+    types: [closed, opened, reopened, assigned]  
 
 jobs:
   RUN-GITHUB-ACTIONS:
