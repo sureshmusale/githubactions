@@ -1,7 +1,10 @@
 name: SHELL COMMANDS WORKFLOW 
 
 
-on: [push]
+on:
+  push:
+    branches:
+      - "master"
 
 jobs:
   first-job-run-shell-command:
