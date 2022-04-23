@@ -14,6 +14,8 @@ jobs:
   RUN-GITHUB-ACTIONS:
     runs-on: ubuntu-latest
     steps:
+      - name: client-payload
+        run: echo ${{gitHub.event.client_payload.env}}
       - name: LIST FILES
         run: |
           echo "before checkout"
