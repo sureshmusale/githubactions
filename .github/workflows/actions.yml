@@ -11,6 +11,22 @@ on:
   push:
     branches:
       - master
+     # - 'release/*' #matches release/releasePR02, release/releasePR03, but not release/release/PR1
+                  #
+      #- 'release/**''   # release/release/PR1 
+     # - '!release/PRXX' #below mentioned will not run on release/PRXX
+    #tags:
+     # - v1.*  
+    #tags-ignore: # cannot have both
+    # - 
+    #paths:
+     # - '**.js' # run the below work flow only when there is push in javascript file in our repository
+    #paths-ignore:
+      #- "docs/**" when some thing is updated inside docs this workflow will not run
+
+
+  #  branches-ignore:
+  #    - ""
   #pull_request:
   #  types: [closed, opened, reopened, assigned]  
 
