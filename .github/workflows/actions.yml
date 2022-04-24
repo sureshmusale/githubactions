@@ -11,6 +11,8 @@ on:
   push:
     branches:
       - master
+    paths:
+      - env.yml
      # - 'release/*' #matches release/releasePR02, release/releasePR03, but not release/release/PR1
                   #
       #- 'release/**''   # release/release/PR1 
